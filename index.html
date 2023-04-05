@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <!-- CONTAINER -->
+    <div class="container">
+      <div class="top">
+        <h1>My Library</h1>
+        <h5>Add details of your book to add it to the list</h5>
+        <hr />
+      </div>
+      <!-- FORM -->
+      <div class="middle">
+        <form id="book-form">
+          <div class="form-group">
+            <label for="title">Title: </label>
+            <input type="text" id="title" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="author">Author: </label>
+            <input type="text" id="author" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="isbn">Pages: </label>
+            <input type="number" id="isbn" class="form-control" />
+          </div>
+          <br />
+          <input
+            type="submit"
+            value="Add Book"
+            class="btn btn-primary btn-block"
+          />
+        </form>
+        <hr />
+      </div>
+      <!-- BOOK TABLE -->
+      <div class="bottom">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Pages</th>
+              <th>Delete</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="book-list"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
